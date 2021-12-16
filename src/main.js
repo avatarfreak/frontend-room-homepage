@@ -63,6 +63,5 @@ menuCloseBtn.addEventListener("click", () => {
 window.addEventListener("resize", () => {
   if (window.innerWidth >= 1024) {
     nav.style.transform = "translateX(0)";
-    console.log("hello");
   }
 });
