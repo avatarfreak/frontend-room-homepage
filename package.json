@@ -1,0 +1,14 @@
+{
+  "name": "room-homepage-master",
+  "version": "1.0.0",
+  "description": "room home page design",
+  "main": "index.js",
+  "keywords": ["html", "tailwindcss", "javascript", "css", "flexbox", "grid"],
+  "author": "avatarfreak",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.5",
+    "tailwindcss": "^3.0.2"
+  }
+}
