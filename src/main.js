@@ -50,7 +50,6 @@ const slideToggleMenu = (menuBtn, slideMenu) => {
   }
 };
 
-// open navigation
 menuOpenBtn.addEventListener("click", () => {
   slideToggleMenu(menuOpenBtn, nav);
 });
@@ -58,4 +57,12 @@ menuOpenBtn.addEventListener("click", () => {
 // close navigation
 menuCloseBtn.addEventListener("click", () => {
   slideToggleMenu(menuOpenBtn, nav);
+});
+
+// Display menu on when window screen is bigger or equal to 1024px
+window.addEventListener("resize", () => {
+  if (window.innerWidth >= 1024) {
+    nav.style.transform = "translateX(0)";
+    console.log("hello");
+  }
 });
