@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="home room page furniture accepted avatarfreak">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@500;600;700&amp;display=swap" rel="stylesheet" />
+  <link href="/dist/output.css" rel="stylesheet" />
+  <script src="./src/main.js" defer></script>
+
+  <title>Frontend Mentor | Room homepage</title>
+</head>
+
+<body class="font-sans min-h-screen grid grid-rows-body">
+  <header>
+    <!-- Header wrapper -->
+    <div class="relative inset-0 z-20">
+      <!-- logo -->
+      <div class="
+            absolute
+            top-11
+            left-0
+            text-center
+            w-full
+            lg:text-left lg:pl-10 lg:w-32 lg:z-40
+          ">
+        <h1 class="sr-only">Check Room furniture</h1>
+        <a href="/" class="inline-block">
+          <span class="sr-only">room</span>
+          <img src="../images/logo.svg" class="inline-block" aria-hidden="true" alt="logo" />
+        </a>
+      </div>
+
+      <div class="absolute top-11 px-6 lg:hidden">
+        <button aria-expanded="false" aria-label="open menu">
+          <img src="../images/icon-hamburger.svg" alt="open menu" aria-hidden="true" />
+        </button>
+      </div>
+
+      <!-- navigation menu -->
+      <div class="
+            fixed
+            transition-transform
+            duration-700
+            transform
+            -translate-x-full
+            left-0
+            inset-0
+            bg-black/50
+            h-screen
+            lg:translate-x-0 lg:h-0
+          " data-nav>
+        <!-- Navigation  -->
+        <nav class="
+              bg-clr-110
+              py-12
+              flex
+              items-center
+              justify-between
+              w-full
+              px-6
+              lg:bg-transparent lg:ml-44
+            ">
+          <button class="lg:hidden" aria-label="close menu">
+            <img src="../images/icon-close.svg" alt="close menu" aria-hidden="true" />
+          </button>
+          <ul class="
+                text-fs-100
+                font-medium
+                flex
+                space-x-4
+                text-clr-130
+                tracking-wider
+                lg:text-clr-110 lg:font-bold
+              ">
+            <li>
+              <a href="#!" class="
+                    lowercase
+                    lg:border-b-2
+                    lg:pb-2
+                    lg:border-opacity-0
+                    lg:hover:border-opacity-100
+                    transition-opacity
+                    duration-500
+                  ">Home</a>
+            </li>
+            <li>
+              <a href="#!" class="
+                    lowercase
+                    lg:border-b-2
+                    lg:pb-2
+                    lg:border-opacity-0
+                    lg:hover:border-opacity-100
+                    transition-opacity
+                    duration-500
+                  ">Shop</a>
+            </li>
+            <li>
+              <a href="#!" class="
+                    lowercase
+                    lg:border-b-2
+                    lg:pb-2
+                    lg:border-opacity-0
+                    lg:hover:border-opacity-100
+                    transition-opacity
+                    duration-500
+                  ">About</a>
+            </li>
+            <li>
+              <a href="#!" class="
+                    lowercase
+                    lg:border-b-2
+                    lg:pb-2
+                    lg:border-opacity-0
+                    lg:hover:border-opacity-100
+                    transition-opacity
+                    duration-500
+                  ">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+    <!-- end of wrapper -->
+
+    <!-- Grid -->
+    <div class="grid lg:items-center lg:grid-cols-2 " data-carousel>
+      <!-- Hero Image -->
+      <div class="relative">
+        <!-- Discover  -->
+        <div class="
+              absoute
+              opacity-0
+              inset-0
+              transition-opacity
+              ease-in-out
+              duration-200
+              delay-200
+            " data-image data-active>
+          <picture>
+            <source srcset="../images/desktop-image-hero-1.jpg" media="(min-width:24.4375rem)" />
+            <img src="../images/mobile-image-hero-1.jpg" alt="table and chair" class="w-full lg:min-h-carousel" />
+          </picture>
+        </div>
+
+        <!-- Manufactured  -->
+        <div class="
+              absolute
+              opacity-0
+              inset-0
+              transition-opacity
+              ease-in-out
+              duration-200
+              delay-200
+            " data-image>
+          <picture>
+            <source srcset="../images/desktop-image-hero-2.jpg" media="(min-width:24.4375rem)" />
+            <img src="../images/mobile-image-hero-2.jpg" alt="bend chair" class="w-full lg:min-h-carousel" />
+          </picture>
+        </div>
+
+        <div class="
+              absolute
+              opacity-0
+              inset-0
+              transition-opacity
+              ease-in-out
+              duration-200
+              delay-200
+            " data-image>
+          <picture>
+            <source srcset="../images/desktop-image-hero-3.jpg" media="(min-width:24.4375rem)" />
+            <img src="../images/mobile-image-hero-3.jpg" alt="foldable chair" class="w-full lg:min-h-carousel" />
+          </picture>
+        </div>
+
+        <!-- Button carousel -->
+        <div class="absolute z-20 bottom-0 flex justify-end w-full lg:left-28">
+          <div class="w-28 bg-clr-130 flex justify-between items-center">
+            <button class="p-4" data-btn="previous">
+              <img aria-hidden="true" src="../images/icon-angle-left.svg" alt="previous" />
+              <span class="sr-only">previous image</span>
+            </button>
+            <button class="p-4" data-btn="next">
+              <img aria-hidden="true" src="../images/icon-angle-right.svg" alt="next" />
+              <span class="sr-only">next image</span>
+            </button>
+          </div>
+        </div>
+        <!-- end of button -->
+      </div>
+      <!-- end of first section -->
+
+      <!-- Information -->
+      <div class="
+            mx-7
+            mt-16
+            relative
+            inset-0
+            lg:max-w-sm lg:m-auto
+            xl:max-w-lg
+          ">
+        <!-- Discover -->
+        <div class="relative opacity-0 inset-0 transition-opacity ease-in-out" data-info data-active>
+          <h2 class="text-fs-300 font-bold leading-l-100">
+            Discover innovative ways to decorate
+          </h2>
+          <p class="
+                my-6
+                text-fs-400
+                tracking-t-200
+                leading-l-200
+                text-clr-100
+                font-medium
+              ">
+            We provide unmatched quality, comfort, and style for property
+            owners across the country. Our experts combine form and function
+            in bringing your vision to life. Create a room in your own style
+            with our collection and make your property a reflection of you and
+            what you love.
+          </p>
+          <div class="group cursor-pointer flex items-center">
+            <a href="#!" class="
+                  my-6
+                  mr-8
+                  text-fs-500
+                  tracking-t-300
+                  uppercase
+                  font-bold
+                  text-clr-120
+                  lg:group-hover:text-clr-100
+                ">
+              Shop now
+            </a>
+            <div>
+              <img src="../images/icon-arrow.svg" alt="arrow" class="mr-4 lg:group-hover:opacity-50" />
+            </div>
+          </div>
+        </div>
+        <!-- end of discover -->
+
+        <!-- avaiable -->
+        <div class="absolute opacity-0 inset-0 transition-opacity ease-in-out" data-info>
+          <h2 class="text-fs-300 font-bold leading-l-100">
+            We are available all across the globe
+          </h2>
+          <p class="
+                my-6
+                text-fs-400
+                tracking-t-200
+                leading-l-200
+                text-clr-100
+                font-medium
+              ">
+            With stores all over the world, it's easy for you to find
+            furniture for your home or place of business. Locally, we’re in
+            most major cities throughout the country. Find the branch nearest
+            you using our store locator. Any questions? Don't hesitate to
+            contact us today.
+          </p>
+          <div class="flex items-center lg:cursor-pointer group">
+            <a href="#!" class="
+                  my-6
+                  mr-8
+                  text-fs-500
+                  tracking-t-300
+                  uppercase
+                  font-bold
+                  text-clr-120
+                  lg:group-hover:text-clr-100
+                ">
+              Shop now
+            </a>
+            <div>
+              <img src="../images/icon-arrow.svg" alt="arrow" class="mr-4 lg:group-hover:opacity-50" />
+            </div>
+          </div>
+        </div>
+        <!-- end of available -->
+
+        <!-- Manufactured  -->
+        <div class="opacity-0 absolute inset-0 transition-opacity ease-in-out" data-info>
+          <h2 class="text-fs-300 font-bold leading-l-100">
+            Manufactured with the best materials
+          </h2>
+          <p class="
+                my-6
+                text-fs-400
+                tracking-t-200
+                leading-l-200
+                text-clr-100
+                font-medium
+              ">
+            Our modern furniture store provide a high level of quality. Our
+            company has invested in advanced technology to ensure that every
+            product is made as perfect and as consistent as possible. With
+            three decades of experience in this industry, we understand what
+            customers want for their home and office.
+          </p>
+          <div class="flex items-center group lg:cursor-pointer">
+            <h3 class="
+                  my-6
+                  mr-8
+                  text-fs-500
+                  tracking-t-300
+                  uppercase
+                  font-bold
+                  text-clr-120
+                  lg:group-hover:text-clr-100
+                ">
+              Shop now
+            </h3>
+            <div>
+              <img src="../images/icon-arrow.svg" alt="arrow" class="mr-4 lg:group-hover:opacity-50" />
+            </div>
+          </div>
+        </div>
+        <!-- end of Manufactured  -->
+      </div>
+      <!-- end of Infomation -->
+    </div>
+    <!-- end of grid -->
+  </header>
+
+  <main class="grid lg:grid-cols-3">
+    <div class="py-6 md:justify-self-end lg:justify-self-auto lg:py-0">
+      <img src="../images/image-about-dark.jpg" alt="chair and table dark shades" class="object-cover h-full w-full" />
+    </div>
+
+    <div class="mx-7 lg:mx-4 lg:py-7 xl:m-auto xl:px-8">
+      <h2 class="text-fs-600 text-clr-130 tracking-t-400 uppercase font-bold">
+        About our furniture
+      </h2>
+      <p class="
+            my-4
+            text-fs-400
+            tracking-t-200
+            leading-l-200
+            text-clr-100
+            font-medium
+            md:max-w-prose
+          ">
+        Our multifunctional collection blends design and function to suit your
+        individual taste. Make each room unique, or pick a cohesive theme that
+        best express your interests and what inspires you. Find the furniture
+        pieces you need, from traditional to contemporary styles or anything
+        in between. Product specialists are available to help you create your
+        dream space.
+      </p>
+    </div>
+
+    <div class="md:justify-self-end lg:justify-self-auto">
+      <img src="../images/image-about-light.jpg" alt="chair and table light shades"
+        class="object-cover h-full w-full" />
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="text-center text-clr-120 text-[11px]">
+    Challenge by
+    <a href="https://www.frontendmentor.io?ref=challenge" target="_blank" class="text-red-500">Frontend Mentor</a>.
+    Coded by
+    <a href="https://www.github.com/avatarfreak" class="text-red-500">avatarfreak</a>.
+  </footer>
+</body>
+
+</html>
